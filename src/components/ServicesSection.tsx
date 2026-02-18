@@ -14,7 +14,7 @@ const services = [
       "Flexible scheduling",
       "Full assessment & guidance",
     ],
-    duration: "30-45 min session",
+    duration: "30-40 min session",
     color: "primary",
   },
   {

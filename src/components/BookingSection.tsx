@@ -30,7 +30,7 @@ const serviceTypes = [
     id: "online",
     icon: Video,
     title: "Online Consultation",
-    duration: "30-45 min",
+    duration: "30-40 min",
   },
   {
     id: "home",
