@@ -52,7 +52,7 @@ export const AboutSection = () => {
                     </div>
                     <div className="w-px bg-border" />
                     <div className="text-center">
-                      <p className="text-xl font-bold text-foreground">1000+</p>
+                      <p className="text-xl font-bold text-foreground">500+</p>
                       <p className="text-xs text-muted-foreground">Patients</p>
                     </div>
                     <div className="w-px bg-border" />
