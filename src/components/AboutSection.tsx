@@ -27,13 +27,13 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-20 lg:py-32 bg-card relative overflow-hidden">
       {/* Decorative background */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl ambient-orb" />
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image/Visual */}
           <div className="relative">
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-8 lg:p-12">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-8 lg:p-12 surface-sheen">
               <div className="aspect-square rounded-2xl bg-card shadow-card flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
@@ -47,12 +47,12 @@ export const AboutSection = () => {
                   </p>
                   <div className="flex justify-center gap-4">
                     <div className="text-center">
-                      <p className="text-xl font-bold text-foreground">10+</p>
+                      <p className="text-xl font-bold text-foreground">5+</p>
                       <p className="text-xs text-muted-foreground">Years Exp.</p>
                     </div>
                     <div className="w-px bg-border" />
                     <div className="text-center">
-                      <p className="text-xl font-bold text-foreground">500+</p>
+                      <p className="text-xl font-bold text-foreground">1000+</p>
                       <p className="text-xs text-muted-foreground">Patients</p>
                     </div>
                     <div className="w-px bg-border" />
@@ -95,7 +95,7 @@ export const AboutSection = () => {
               {credentials.map((item, index) => (
                 <div
                   key={item.title}
-                  className="flex gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors"
+                  className="flex gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-secondary transition-colors animate-fade-in-up card-lift surface-sheen"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">

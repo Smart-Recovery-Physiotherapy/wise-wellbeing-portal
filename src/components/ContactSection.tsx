@@ -56,7 +56,7 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="py-20 lg:py-32 bg-background relative overflow-hidden">
       {/* Background */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/3 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/3 rounded-full blur-3xl ambient-orb ambient-orb-reverse" />
 
       <div className="container relative z-10">
         {/* Section Header */}
@@ -82,7 +82,7 @@ export const ContactSection = () => {
               {contactInfo.map((item) => (
                 <div
                   key={item.title}
-                  className="flex items-start gap-4 p-4 rounded-xl bg-card hover:shadow-card transition-shadow"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-card hover:shadow-card transition-shadow card-lift surface-sheen"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-6 h-6 text-primary" />
@@ -105,7 +105,7 @@ export const ContactSection = () => {
             </div>
 
             {/* Quick Actions */}
-            <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/10">
+            <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-accent/5 border border-primary/10 surface-sheen">
               <h4 className="font-semibold text-foreground mb-3">
                 Ready to Book?
               </h4>
@@ -125,7 +125,7 @@ export const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-card rounded-3xl p-8 shadow-card border border-border/50">
+          <div className="bg-card rounded-3xl p-8 shadow-card border border-border/50 surface-sheen">
             <h3 className="text-xl font-semibold text-foreground mb-6">
               Send us a Message
             </h3>

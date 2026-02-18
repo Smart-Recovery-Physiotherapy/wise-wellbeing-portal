@@ -22,8 +22,8 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-hero" />
       
       {/* Decorative elements */}
-      <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl ambient-orb ambient-orb-slow" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-3xl ambient-orb ambient-orb-reverse" />
 
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -82,7 +82,7 @@ export const HeroSection = () => {
 
           {/* Hero Image */}
           <div className="relative animate-fade-in-up delay-300">
-            <div className="relative rounded-3xl overflow-hidden shadow-xl">
+            <div className="relative rounded-3xl overflow-hidden shadow-xl surface-sheen">
               <img
                 src={heroImage}
                 alt="Professional physiotherapy treatment session"
@@ -107,7 +107,7 @@ export const HeroSection = () => {
 
             {/* Experience badge */}
             <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground rounded-2xl px-5 py-3 shadow-primary animate-float delay-200">
-              <p className="font-display font-bold">10+ Years</p>
+              <p className="font-display font-bold">5+ Years</p>
               <p className="text-xs opacity-90">Experience</p>
             </div>
           </div>

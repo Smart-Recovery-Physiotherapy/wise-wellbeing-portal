@@ -154,7 +154,7 @@ export const BookingSection = () => {
   return (
     <section id="booking" className="py-20 lg:py-32 bg-card relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/3 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/3 rounded-full blur-3xl ambient-orb ambient-orb-slow" />
 
       <div className="container relative z-10">
         {/* Section Header */}
@@ -205,7 +205,7 @@ export const BookingSection = () => {
         </div>
 
         {/* Form Steps */}
-        <div className="max-w-2xl mx-auto bg-background rounded-3xl p-8 shadow-card border border-border/50">
+        <div className="max-w-2xl mx-auto bg-background rounded-3xl p-8 shadow-card border border-border/50 surface-sheen">
           {/* Step 1: Select Service */}
           {step === 1 && (
             <div className="animate-fade-in">

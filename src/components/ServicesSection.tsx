@@ -45,8 +45,8 @@ export const ServicesSection = () => {
   return (
     <section id="services" className="py-20 lg:py-32 bg-background relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/3 rounded-full blur-3xl" />
-      <div className="absolute top-20 right-20 w-[300px] h-[300px] bg-accent/3 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/3 rounded-full blur-3xl ambient-orb ambient-orb-slow" />
+      <div className="absolute top-20 right-20 w-[300px] h-[300px] bg-accent/3 rounded-full blur-3xl ambient-orb ambient-orb-reverse" />
 
       <div className="container relative z-10">
         {/* Section Header */}
@@ -68,7 +68,8 @@ export const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="group relative bg-card rounded-3xl p-8 shadow-card hover:shadow-xl transition-all duration-300 border border-border/50 hover:border-primary/20"
+              className="group relative bg-card rounded-3xl p-8 shadow-card hover:shadow-xl transition-all duration-300 border border-border/50 hover:border-primary/20 animate-fade-in-up card-lift surface-sheen"
+              style={{ animationDelay: `${index * 120}ms` }}
             >
               {/* Icon */}
               <div
