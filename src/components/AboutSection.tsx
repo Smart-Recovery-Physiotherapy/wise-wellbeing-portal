@@ -40,7 +40,7 @@ export const AboutSection = () => {
                     <span className="text-4xl font-display font-bold text-primary">RE</span>
                   </div>
                   <h3 className="text-2xl font-display font-bold text-foreground mb-2">
-                    Dr. Rehan Ejaz
+                    Rehan Ejaz
                   </h3>
                   <p className="text-primary font-medium mb-4">
                     Chartered Physiotherapist
@@ -79,7 +79,7 @@ export const AboutSection = () => {
               Expert Care, Compassionate Treatment
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              I'm Dr. Rehan Ejaz, a Chartered Physiotherapist dedicated to helping you achieve 
+              I'm Rehan Ejaz, a Chartered Physiotherapist dedicated to helping you achieve 
               optimal physical health and recovery. With over a decade of experience, I specialize 
               in providing evidence-based physiotherapy treatments tailored to your individual needs.
             </p>
