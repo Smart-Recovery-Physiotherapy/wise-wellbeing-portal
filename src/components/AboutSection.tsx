@@ -79,8 +79,8 @@ export const AboutSection = () => {
               Expert Care, Compassionate Treatment
             </h2>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              I'm Rehan Ejaz, a Chartered Physiotherapist dedicated to helping you achieve 
-              optimal physical health and recovery. With over a decade of experience, I specialize 
+              I'm Dr. Rehan Ejaz, a Chartered Physiotherapist dedicated to helping you achieve 
+              optimal physical health and recovery. With over 5 years of clinical experience, I specialize 
               in providing evidence-based physiotherapy treatments tailored to your individual needs.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
