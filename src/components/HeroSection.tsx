@@ -42,7 +42,7 @@ export const HeroSection = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-in-up delay-200">
-              Expert physiotherapy care by Dr. Rehan Ejaz, Chartered Physiotherapist. 
+              Expert physiotherapy care by Rehan Ejaz, Chartered Physiotherapist. 
               Get personalized treatment plans designed for your recovery journey.
             </p>
 
