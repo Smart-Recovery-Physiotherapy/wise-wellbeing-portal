@@ -1,5 +1,5 @@
 import { Award, Heart, GraduationCap, Users } from "lucide-react";
-
+import { FaInstagram } from "react-icons/fa";
 const credentials = [
   {
     icon: GraduationCap,
@@ -36,15 +36,29 @@ export const AboutSection = () => {
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-8 lg:p-12 surface-sheen">
               <div className="aspect-square rounded-2xl bg-card shadow-card flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-4xl font-display font-bold text-primary">RE</span>
+                  <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+                    {/* <span className="text-4xl font-display font-bold text-primary">RE</span> */}
+                     <img
+                       src="src\assets\hero-physio.jpg"  
+                       alt="Profile"
+                       className="w-full h-full object-cover"
+                     />
                   </div>
                   <h3 className="text-2xl font-display font-bold text-foreground mb-2">
                     Rehan Ejaz
                   </h3>
-                  <p className="text-primary font-medium mb-4">
+                  <p className="text-primary font-medium mb-2">
                     Chartered Physiotherapist
                   </p>
+                  <a
+                    href="https://www.instagram.com/srphysiotherapyclinic?igsh=eXA5cTF1dXo0M2Rm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-4"
+                  >
+                    <FaInstagram className="text-lg" />
+                    <span>@srphysiotherapyclinic</span>
+                  </a>
                   <div className="flex justify-center gap-4">
                     <div className="text-center">
                       <p className="text-xl font-bold text-foreground">5+</p>

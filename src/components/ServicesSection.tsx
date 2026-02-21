@@ -128,7 +128,7 @@ export const ServicesSection = () => {
               onClick={scrollToBooking}
               className="text-primary font-medium hover:underline"
             >
-              Contact us for a free consultation
+              Contact us for a 10 min free consultation
             </button>
           </p>
         </div>

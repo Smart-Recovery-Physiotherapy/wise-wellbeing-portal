@@ -50,6 +50,13 @@ const timeSlots = [
   "04:00 PM",
   "05:00 PM",
 ];
+const afterHoursSlots = [
+  "07:00 PM",
+  "08:00 PM",
+  "09:00 PM",
+  "10:00 PM",
+  "11:00 PM",
+];
 
 export const BookingSection = () => {
   const [step, setStep] = useState(1);
@@ -64,6 +71,7 @@ export const BookingSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
+  const [selectedAfterHoursTime, setSelectedAfterHoursTime] = useState<string>("");
 
   const handleNext = () => {
     if (step < 4) setStep(step + 1);
@@ -99,7 +107,7 @@ export const BookingSection = () => {
       case 1:
         return selectedService !== "";
       case 2:
-        return selectedDate !== undefined && selectedTime !== "";
+        return selectedDate !== undefined && (selectedTime !== "" || selectedAfterHoursTime !== "");
       case 3:
         return formData.name && formData.email && formData.phone;
       default:
@@ -241,6 +249,7 @@ export const BookingSection = () => {
                   </button>
                 ))}
               </div>
+              
             </div>
           )}
 
@@ -295,13 +304,44 @@ export const BookingSection = () => {
                           "p-3 rounded-lg text-sm font-medium transition-all flex items-center justify-center gap-2",
                           selectedTime === time
                             ? "bg-primary text-primary-foreground"
-                            : "bg-secondary text-foreground hover:bg-secondary/80"
+                            : "bg-secondary text-card hover:bg-secondary/80"
                         )}
                       >
                         <Clock className="w-4 h-4" />
                         {time}
                       </button>
                     ))}
+                  </div>
+                  <div className="mt-6 p-4 rounded-xl border border-primary/20 bg-primary/5">
+                    <p className="text-sm font-semibold text-primary mb-1">
+                      Out of Hours
+                    </p>
+
+                   <p className="text-xs text-muted-foreground mb-3">
+                    Appointments after 6PM are available.{" "}
+                    <span className="font-bold text-black">
+                      Extra charges will apply.
+                    </span>
+                  </p>
+
+                    <select
+                      value={selectedAfterHoursTime}
+                      onChange={(e) => {
+                        setSelectedTime("");
+                        setSelectedAfterHoursTime(e.target.value);
+                      }}
+                      className="w-full h-12 rounded-lg border border-primary/20 bg-background px-4 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                    >
+                      <option value="">
+                        Select After 6PM 
+                      </option>
+
+                      {afterHoursSlots.map((time) => (
+                        <option key={time} value={time}>
+                          {time}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 </div>
               </div>
