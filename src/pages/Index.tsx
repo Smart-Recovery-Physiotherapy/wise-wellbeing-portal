@@ -5,6 +5,11 @@ import { ServicesSection } from "@/components/ServicesSection";
 import { BookingSection } from "@/components/BookingSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { WhatToExpectSection } from "@/components/WhatToExpectSection";
+import HomeVisitSection from "@/components/HomeVisitSection";
+import { FeesSection } from "@/components/FeesComponent";
+import { CancellationPolicy } from "@/components/CancellationPolicy";
+import { ConditionsSection } from "@/components/ConditionsWeTreat";
 
 const Index = () => {
   return (
@@ -13,8 +18,13 @@ const Index = () => {
       <main>
         <HeroSection />
         <AboutSection />
+        <WhatToExpectSection/>
+        <ConditionsSection/>
         <ServicesSection />
+        <HomeVisitSection/>
+        <FeesSection/>
         <BookingSection />
+        <CancellationPolicy/>
         <ContactSection />
       </main>
       <Footer />
